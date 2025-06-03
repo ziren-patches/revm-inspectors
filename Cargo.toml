@@ -35,13 +35,13 @@ alloy-primitives = { version = "1.0.0", default-features = false, features = [
     "map",
 ] }
 
-# alloy-rpc-types-eth = { version = "0.14.0", default-features = false }
-# alloy-rpc-types-trace = { version = "0.14.0", default-features = false }
-# revm = { git = "https://github.com/zkMIPS-patches/revm", branch = "patch-22.0.0", default-features = false }
+alloy-rpc-types-eth = { git = "https://github.com/zkMIPS-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-rpc-types-trace = { git = "https://github.com/zkMIPS-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+revm = { git = "https://github.com/zkMIPS-patches/revm", branch = "patch-22.0.0-goat", default-features = false }
 
-alloy-rpc-types-eth = { path = "../alloy/crates/rpc-types-eth", default-features = false }
-alloy-rpc-types-trace = { path = "../alloy/crates/rpc-types-trace", default-features = false }
-revm = { path = "../revm/crates/revm", default-features = false }
+# alloy-rpc-types-eth = { path = "../alloy/crates/rpc-types-eth", default-features = false }
+# alloy-rpc-types-trace = { path = "../alloy/crates/rpc-types-trace", default-features = false }
+# revm = { path = "../revm/crates/revm", default-features = false }
 
 anstyle = { version = "1.0", optional = true }
 colorchoice = "1.0"
